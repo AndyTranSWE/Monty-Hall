@@ -1,0 +1,134 @@
+<!--
+File: index.html
+GUI Assignment: Creating Your First Web Page
+Andy Tran, UMass Lowell Computer Science, andy_tran1@student.uml.edu
+Copyright (c) 2024 by Andy. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AT on May 20, 2024 at 10:04 PM
+Description: This page displays the HTML markup code for my webpage, which
+displays and demonstrates the Monty Hall Problem.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sample Web Page</title>
+        <!-- LINK TO "stylesheet.css" -->
+        <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+    <body>
+        <!-- CONTAINER FOR PAGE CONTENT -->
+        <div class="container">
+            <h1>The Monty Hall Problem</h1>
+            <!-- EXPLANATION SECTION (with purely original images) -->
+            <h2>Look at these three doors...</h2>
+            <div class="images">
+                <img src="images/image1.png" alt="Image 1">
+                <img src="images/image1.png" alt="Image 2">
+                <img src="images/image1.png" alt="Image 3">
+            </div>
+            
+            <!-- The explanation for the Monty Hall problem was almost purely from my recollection.
+            I used the "Understanding the Monty Hall Problem" article by betterexplained.com to check
+            my work, however. This is the link: https://betterexplained.com/articles/understanding-the-Monty-Hall-problem/ -->
+            
+            <!-- This is the intro paragraph. -->
+            <p>
+                You are on a game show. Behind one of these doors is
+                a new car. Behind two others are piles of coal. 
+                When the host asks you to pick one of the
+                doors, you choose the left door at random.
+                Then, the host opens the right door with coal 
+                behind it, and asks if you want to switch 
+                your choice. If you want a new car, would it be 
+                advantageous to switch?
+            </p>
+
+            <div class="images">
+                <img src="images/image1.png" alt="Image 1">
+                <img src="images/image1.png" alt="Image 2">
+                <img src="images/image2.png" alt="Image 3">
+            </div>
+
+            <!-- TABLES SECTION -->
+            <!-- The first table shows what one might expect the probabilities
+            to be, while the second shows the true probabilities of getting
+            a car based on switching. -->
+            <h2>Probabilities</h2>
+
+            <table>
+                <caption>Presumed Probabilities of 
+                    Each Door Containing a Car</caption>
+                <tr>
+                    <th>Left Door</th>
+                    <th>Middle Door</th>
+                    <th>Right Door</th>
+                </tr>
+                <tr>
+                    <td>50.0%</td>
+                    <td>50.0%</td>
+                    <td>0.0%</td>
+                </tr>
+            </table>
+            
+            <!-- This is the explanatory paragraph.-->
+            <p>
+                One might think not, considering you are choosing
+                between two doors. Surely, this situation means
+                there is a 50% chance of getting a car regardless
+                of what door you finally choose. However, the real
+                answer is much more unintuitive. It turns out that
+                there is an advantage to switching from your initial
+                choice to the new door! Let's explore the reason as
+                to why. When you chose a door at random in the
+                beginning, you had a one-third or approximately
+                33.3% chance of getting the car. That probability
+                does not change when a new door is revealed! It
+                remains 33.3% and does not increase to 50%.
+                The key to understanding this puzzle is that
+                nothing changes behind the door you chose just because
+                another door has opened. Now that the right door is
+                open, the question essentially becomes, "Was it more likely
+                the car was behind the door I chose, or any of the other doors?"
+                Clearly the latter is more likely, and therefore the chance
+                of getting a new car by switching is 66.6%!
+            </p>
+
+            <table>
+                <caption>True Probabilities of 
+                    Each Door Containing a Car</caption>
+                <tr>
+                    <th>Left Door</th>
+                    <th>Middle Door</th>
+                    <th>Door Door</th>
+                </tr>
+                <tr>
+                    <td>33.3%</td>
+                    <td>66.6%</td>
+                    <td>0.0%</td>
+                </tr>
+            </table>
+
+            <!-- LINKS SECTION -->
+            <h2>Links</h2>
+            Here are some more links if you want to know more about the Monty Hall Problem:
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Monty_Hall_problem">Wikipedia for Monty Hall Problem</a></li>
+                <li><a href="https://betterexplained.com/articles/understanding-the-Monty-Hall-problem/">"Understanding the Monty Hall Problem"</a></li>
+                <li><a href="https://www.montyhallproblem.com/">Official Monty Hall Problem Site</a></li>
+            </ul>
+
+        </div>
+
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!">
+            </a>
+        </p>
+                    
+
+    </body>
+</html>
